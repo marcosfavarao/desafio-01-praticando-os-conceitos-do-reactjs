@@ -1,0 +1,63 @@
+.container {
+  width: 100%;
+}
+
+.taskContainer {
+  width: 100%;
+  max-width: 46rem;
+  margin: -1.75rem auto 0;
+}
+
+.tasks {
+  width: 100%;
+}
+
+.taskbar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.taskbar h2 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.taskbar h2:after {
+  content: '';
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  margin-left: 0.5rem;
+  padding: 0.125rem 0.5rem;
+  border: 0;
+  border-radius: 9999px;
+
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.taskbar h2:first-child:after {
+  content: attr(total-tasks);
+}
+
+.taskbar h2:last-child:after {
+  content: attr(total-tasks-completed);
+}
+
+.taskbar h2:first-child {
+  color: var(--blue);
+}
+
+.taskbar h2:last-child {
+  color: var(--purple);
+}
+
+.list {
+  width: 100%;
+  height: 100svh;
+  max-height: 15.25rem;
+}

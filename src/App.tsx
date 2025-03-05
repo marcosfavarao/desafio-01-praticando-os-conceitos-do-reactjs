@@ -1,9 +1,9 @@
-import {Header} from "./components/Header.tsx";
+import {Component} from "./components/Component.tsx";
 
 export function App() {
   return (
     <>
-      <Header />
+      <Component />
     </>
   )
 }

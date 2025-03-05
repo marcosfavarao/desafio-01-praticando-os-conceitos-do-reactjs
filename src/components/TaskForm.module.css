@@ -1,0 +1,56 @@
+.newTaskForm {
+  width: 100%;
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.newTaskForm input {
+  flex: 1;
+  background-color: var(--gray-500);
+  color: var(--gray-100);
+  border: 1px solid var(--gray-700);
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  outline: 0;
+}
+
+.newTaskForm input::placeholder {
+  color: var(--gray-300);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.newTaskForm input:focus {
+  border-color: var(--purple-dark);
+}
+
+.newTaskForm button[type="submit"] {
+  background-color: var(--blue-dark);
+  color: var(--gray-100);
+  padding: 1rem;
+  border: 0;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: capitalize;
+}
+
+.newTaskForm button[type="submit"]:hover {
+  background-color: var(--blue);
+}
+
+.newTaskForm button[type="submit"] svg {
+  width: 1rem;
+  height: 1rem;
+}

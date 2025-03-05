@@ -1,0 +1,93 @@
+.taskList {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.taskList li {
+  background-color: var(--gray-500);
+  padding: 1rem;
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  list-style-type: none;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.taskList li + li {
+  margin-top: 0.75rem;
+}
+
+.taskList li:hover {
+  border-color: var(--purple-dark);
+}
+
+.taskList input[type="checkbox"] {
+  background-color: transparent;
+  padding: 0.5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid var(--blue);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+
+  position: relative;
+}
+
+.taskList input[type="checkbox"]:hover {
+  border-color: var(--blue-dark);
+}
+
+.taskList input[type="checkbox"]:checked {
+  background-color: var(--purple-dark);
+  border-color: var(--purple-dark);
+}
+
+.taskList input[type="checkbox"]:checked:hover {
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+
+.taskList input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: var(--gray-100);
+  line-height: 1.4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.taskList li p {
+  color: var(--gray-100);
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.taskList li button {
+  background-color: transparent;
+  color: var(--gray-300);
+  padding: 0.125rem;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  line-height: 0;
+}
+
+.taskList li button:hover {
+  background-color: var(--gray-400);
+  color: var(--danger);
+}
+
+.taskList li.taskComplete p {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
